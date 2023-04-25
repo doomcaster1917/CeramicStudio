@@ -1,0 +1,19 @@
+{% extends 'index/layout.html' %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+{% block content %}
+
+        <img src="{{ our_work.image.url }}" id="detail_img">
+
+<div class="features">
+
+        <h1 style="text-align:center">{{ our_work.name }}</h1>
+        <p>{{ our_work.description }}</p>
+
+    </div>
+
+
+{% endblock %}

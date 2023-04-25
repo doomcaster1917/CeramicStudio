@@ -1,0 +1,231 @@
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('../fonts/Helvetica Neue/HelveticaNeueCyr-Light.eot');
+    src: local('HelveticaNeueCyr-Medium'),
+    url('../fonts/Helvetica Neue/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Helvetica Neue/HelveticaNeueCyr-Light.woff2') format('woff2'),
+    url('../fonts/Helvetica Neue/HelveticaNeueCyr-Light.woff') format('woff'),
+    url('../fonts/Helvetica Neue/HelveticaNeueCyr-Light.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Thin';
+    src: url('../fonts/Roboto/Roboto-Light.ttf');
+    src: url('../fonts/Roboto/Roboto-Thin.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #F7FAFC;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+#header{
+    width: 100vw;
+    height: 50px;
+    background-color: #BDD7FE;
+    /*font-family: "MontserratAlternates-Medium";*/
+    font-family: "HelveticaNeueCyr";
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li:hover{
+    text-decoration: none;
+    color: black;
+    background: #94BCF9;
+}
+
+.base_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+#marks{
+    width: 140px;
+}
+
+#words{
+    width: 140px;
+    height: 50px;
+    display: inline;
+}
+
+li{
+    display: inline;
+}
+
+#studio_emblem{
+    background-image: url("../img/studio_emblem.png") ;
+    background-size: contain;
+    width: 45px;
+    height: 45px;
+    margin-top: 1px;
+}
+
+#vk_emblem{
+    background-image: url("../img/vk_emblem.png") ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 47px;
+    margin-top: 3px;
+}
+
+h1 {
+    font-family: "Roboto Thin";
+    margin-top: 20px;
+}
+
+
+
+#ceramic-house{
+    position: absolute;
+    background-image: url("../img/ceramic-house.png") ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 185px;
+    height: 187px;
+    translate: -260px 130px;
+}
+
+#house{
+    font-family: "Roboto Thin";
+    translate: -260px 265px;
+}
+
+#ceramic-cup{
+    position: absolute;
+    background-image: url("../img/ceramic-cup.png") ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 235px;
+    height: 237px;
+    translate: 250px 210px;
+}
+
+#cup{
+    font-family: "Roboto Thin";
+    translate: 250px 313px;
+}
+
+#ceramic-pupil{
+    position: absolute;
+    background-image: url("../img/ceramic-puple.png") ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 235px;
+    height: 237px;
+    translate: -20px 395px;
+}
+
+#pupil{
+    font-family: "Roboto Thin";
+    translate: 150px 435px;
+}
+
+#call_to_register{
+    font-family: "Roboto Thin";
+    translate: 0 495px;
+    color: black;
+    background: #BDD7FE;
+    opacity: 80%;
+}
+#link_to_register{
+    text-decoration: none;
+}
+
+#link_to_register:hover{
+    text-decoration: none;
+    color: #BDD7FE;
+}
+
+.bottom_wrapper{
+    position: relative;
+    background: #BDD7FE;
+    /*width: 100vw;*/
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    translate: 0 67vh;
+    flex-wrap: wrap;
+}
+
+#work_room{
+
+    background-image: url("../img/work-room.png") ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    margin-right: 40px;
+    width: 405px;
+    height: 387px;
+    /*translate: 20px 395px;*/
+}
+
+#text_about_location{
+/*translate: 200px 200px;*/
+    font-family: "Roboto Thin";
+    font-size: 22px;
+    margin-top: 110px;
+    margin-left: 10px;
+    width: 440px;
+    height: 300px;
+
+}
+
+#hours_of_working{
+    font-family: "Roboto Thin";
+    font-size: 22px;
+    margin-top: 160px;
+    margin-right: 120px;
+    width: 240px;
+    height: 300px;
+}
+
+
+#text_about_teacher{
+    margin-top: -50px;
+}
+#teacher{
+    background-image: url("../img/irina_working.png") ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: -20px;
+    width: 805px;
+    height: 400px;
+    /*translate: 20px 395px;*/
+}
+
+#detail_img{
+    width: 60vw;
+    height: 60vh;
+    margin-top: 50px;
+}
+

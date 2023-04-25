@@ -1,0 +1,17 @@
+{% extends 'index/layout.html' %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+
+{% block content %}
+<div id="block_wrapper"></div>
+<script>
+    for(var i=0; i < 7; i++) {
+        load("Черепаха", 'Делали целую неделю. Делали целую неделю. Первые дни обжигали тело, потом лапы, раскрашивали ещё 3 дня', "/images/turtle.jpg")
+    }
+</script>
+
+{% endblock %}
+</html>

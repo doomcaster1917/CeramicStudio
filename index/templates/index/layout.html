@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Студия Ирины Фроловой</title>
+
+    <link rel="stylesheet" media="screen and (orientation: portrait)" href="index-mobile.css" />
+    <link rel="stylesheet" media="screen and (orientation: landscape)" href="{% static 'index/css/index.css' %}"/>
+    <link rel="stylesheet" href="{% static 'index/css/our_results.css' %}">
+    <link rel="stylesheet" href="{% static 'index/css/prices.css' %}">
+    <script src="{% static 'index/js/our_results.js' %}"></script>
+
+</head>
+<body>
+    <div id="header">
+      <div id="studio_emblem"></div>
+      <a href="https://vk.com/ceramicsdmd"><div id="vk_emblem"></div></a>
+      <a href="{% url 'home' %}"><li>Главная</li></a>
+      <a href="{% url 'our_works' %}"><li>Наши работы</li></a>
+      <a href="{% url 'prices' %}"><li>Цены</li></a>
+      <a href="{% url 'contacts' %}"><li>Контакты</li></a>
+    </div>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

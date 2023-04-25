@@ -1,0 +1,36 @@
+{% extends 'index/layout.html' %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+{% block content %}
+    <div class="base_wrapper">
+    <h1>Студия керамики Ирины Фроловой</h1>
+    <div id = "ceramic-house"></div>
+    <h3 id="house">Красиво</h3>
+    <div id = "ceramic-cup"></div>
+    <h3 id="cup">Интересно</h3>
+    <div id = "ceramic-pupil"></div>
+    <h2 id="pupil">Нравится <br> детям</h2>
+    <a href="{% url 'contacts' %}" id="link_to_register"><h2 id="call_to_register">Запишись к нам сам или
+        запиши своего ребёнка -
+    и скоро в твоём доме <br> появятся такие же фигуры,
+    сделанные своими руками</h2></a>
+</div>
+    <div class="bottom_wrapper">
+    <div id="work_room"></div>
+    <div id="text_about_location">Студия находится по адресу: город Домодедово,<br>
+        улица 25 лет октября, дом 9.  В любой день вы можете прийти к нам в гости
+        и увидеть, как <br>происходит обучение и создание <br>живописной керамики. </div>
+    {% for el in hours %}
+    <div id="hours_of_working">Режим работы: с {{ el.start_time|time:"H:i" }} до {{ el.end_time|time:"H:i" }}</div>
+    {% endfor %}
+    <div id="map_position">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adf1ed3dd20e13501be123c79e7b09273f7422e4195000575a52414150517b3bc&amp;width=405&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
+        <h1 id="text_about_teacher">Занятия проводит Ирина Фролова</h1>
+        <div id="teacher"></div>
+    </div>
+
+{% endblock %}

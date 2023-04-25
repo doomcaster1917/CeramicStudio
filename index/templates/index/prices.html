@@ -1,0 +1,31 @@
+{% extends 'index/layout.html' %}
+
+{% block title %}
+
+{% endblock %}
+
+{% block content %}
+<div id="prices_wrapper">
+
+    {% for element in services %}
+    <div id="service">
+                 <div id="decriptionPrices">
+                <h3>{{ element.name }}</h3>
+                <p>{{ element.description }}</p>
+                     <br>
+                     {% if element.price %}
+                <h3>Цена: {{ element.price }} рублей</h3>
+                     {% else %}
+                     {% endif %}
+            </div>
+            {% if element.image %}
+            <img src="{{ element.image.url }}" id="pricesImg">
+            {% else %}
+            {% endif %}
+        </div>
+    {% endfor %}
+</div>
+
+
+
+{% endblock %}
